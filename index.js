@@ -69,8 +69,8 @@ formElement.addEventListener('submit', function(evnt) {
 function getTasksFromDOM() {
 	const itemsNamesElements = document.querySelectorAll('.to-do__item-text');
 	let tasks = [];
-	itemsNamesElements.forEach(function(element) {
-		tasks.push(element.textContent);
+	itemsNamesElements.forEach(function(item) {
+		tasks.push(item.textContent);
 	});
 	return tasks;
 };
