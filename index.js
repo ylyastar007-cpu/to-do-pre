@@ -56,7 +56,7 @@ items.forEach(item => listElement.append(createItem(item)));
 
 formElement.addEventListener('submit', function(evnt) {
 	evnt.preventDefault();
-	const item = inputElement.value.trim();
+	const item = inputElement.value;
 	if (item) {
 		const taskElements = createItem(item);
 		listElement.prepend(taskElements);
